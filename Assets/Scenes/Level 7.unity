@@ -2547,7 +2547,7 @@ MonoBehaviour:
   meteoriteData: {fileID: 11400000, guid: 61a2d71449b214a1094af9a20cb118b3, type: 2}
   _meteorImage: {fileID: 1838220165}
   _meteorImageVic: {fileID: 1838220164}
-  numberOfMeteorite: 500
+  numberOfMeteorite: 20
   timer: {fileID: 1838220160}
 --- !u!114 &963194231
 MonoBehaviour:
@@ -3877,6 +3877,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2894262111140169557, guid: 893c6b16f87a14f1d81680ae7172c2ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2894262111406664424, guid: 893c6b16f87a14f1d81680ae7172c2ab, type: 3}
       propertyPath: startTime
       value: 200

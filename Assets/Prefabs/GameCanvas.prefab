@@ -1664,7 +1664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5efcaf5be79e12a4b892ab0cac2aaa92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectCoins: {fileID: 0}
+  collectCoins: {fileID: 2894262111406664426}
 --- !u!1 &2894262111901459368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,7 +2126,6 @@ GameObject:
   - component: {fileID: 2066809726950568330}
   - component: {fileID: 1445278510643334566}
   - component: {fileID: 1072151814909855122}
-  - component: {fileID: 5285192042576685401}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2196,16 +2195,3 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: MISSION COMPLETE
---- !u!114 &5285192042576685401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8637147029269319276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5efcaf5be79e12a4b892ab0cac2aaa92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectCoins: {fileID: 0}

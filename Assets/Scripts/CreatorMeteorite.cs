@@ -33,16 +33,17 @@ namespace Assets
             _meteorImage.img.sprite = Metoerit(_asteroidColor).Sprite;
             _meteorImageVic.img.sprite = Metoerit(_asteroidColor).Sprite;
 
+  
+        }
+
+        private void Update()
+        {
             if (canFunctionWork)
             {
                 if (PlayerPrefs.GetInt("Tutorial") == 0) return;
                 StartCoroutine(Creator());
                 canFunctionWork = false;
             }
-        }
-
-        private void Update()
-        {
         }
 
         private IEnumerator Creator()
