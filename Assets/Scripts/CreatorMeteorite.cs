@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets
 {
@@ -8,18 +10,15 @@ namespace Assets
     {
         [SerializeField] private GameObject meteorite;
         [SerializeField] private int numberOfMeteorite;
-        private Timer timer;
-        private List<Vector3> busyPosition = new List<Vector3>(); 
+        [SerializeField] private Timer timer;
+        private List<Vector3> busyPosition = new List<Vector3>();
         private int minPositionX = -7;
         private int maxPositionX = 4;
         private int minPositionZ = 25;
         private int maxPositionZ = 12;
         private bool canFunctionWork = true;
+
         private void Start()
-        {
-            timer = GetComponent<Timer>();
-        }
-        private void Update()
         {
             if (canFunctionWork)
             {
@@ -28,6 +27,11 @@ namespace Assets
                 canFunctionWork = false;
             }
         }
+
+        private void Update()
+        {
+        }
+
         private IEnumerator Creator()
         {
             while (timer.IsTimeIsUp == false)
@@ -43,6 +47,7 @@ namespace Assets
                         busyPosition.Add(position);
                     }
                 }
+
                 yield return new WaitForSeconds(10);
             }
         }

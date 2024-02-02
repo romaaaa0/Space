@@ -8,20 +8,19 @@ namespace Assets.Scripts
         [SerializeField] private GameObject gameOverPanel;
         [SerializeField] private BlackHole blackHole;
         [SerializeField] private CollectMeteorite collectMeteorite;
-        private Timer timer;
+        [SerializeField] private Timer timer;
         private bool canFunctionWork = true;
-        private void Start()
-        {
-            timer = GetComponent<Timer>();
-        }
+
         private void Update()
         {
-            if (timer.IsTimeIsUp && collectMeteorite.NumberOfMeteorites < blackHole.RequestAmountMeteorite && canFunctionWork)
+            if (timer.IsTimeIsUp && collectMeteorite.NumberOfMeteorites < blackHole.RequestAmountMeteorite &&
+                canFunctionWork)
             {
                 StartCoroutine(LostGame());
                 canFunctionWork = false;
             }
         }
+
         private IEnumerator LostGame()
         {
             Information.GameIsOff = true;
