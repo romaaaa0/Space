@@ -28,14 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8108417924133239994}
-  m_LocalRotation: {x: 0.6629967, y: -0.00088818977, z: 0.0007901772, w: 0.74862146}
+  m_LocalRotation: {x: 0.66299856, y: -0.0008928158, z: 0.0007949351, w: 0.74861974}
   m_LocalPosition: {x: -1.372463, y: 21.771328, z: -5.4016314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 83.058, y: -0.134, z: 0.003}
 --- !u!20 &8108417924133239992
 Camera:
   m_ObjectHideFlags: 0
@@ -99,7 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fa1c06444eb34448a6b87c53e7e859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteorite: {fileID: 6351937747461909000, guid: a663d2e3841dc3840a93a44a92e2ebca, type: 3}
+  _asteroidColor: 0
+  meteoriteData: {fileID: 11400000, guid: 61a2d71449b214a1094af9a20cb118b3, type: 2}
+  _meteorImage: {fileID: 0}
+  _meteorImageVic: {fileID: 0}
   numberOfMeteorite: 20
   timer: {fileID: 0}
 --- !u!114 &8108417924133239996

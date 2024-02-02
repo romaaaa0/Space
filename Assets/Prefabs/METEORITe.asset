@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee0ecfa904047ee963fc93e7e398af6, type: 3}
+  m_Name: METEORITe
+  m_EditorClassIdentifier: 
+  meteorite:
+  - AsteroidColor: 0
+    GameObject: {fileID: 6351937747461909000, guid: 5713f57e37e04443e8728a75c8b25af1, type: 3}
+    Sprite: {fileID: 21300000, guid: d5f035e4702b24475910a04b75da99e6, type: 3}
+  - AsteroidColor: 1
+    GameObject: {fileID: 6351937747461909000, guid: 93b8c1d9ab5174822bed305b9392ae91, type: 3}
+    Sprite: {fileID: 21300000, guid: 5033af6d8b7534effab703ea8f4196c3, type: 3}
